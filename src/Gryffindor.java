@@ -26,20 +26,20 @@ public class Gryffindor  extends Hogwards{
     public void  compare(Gryffindor other)
     { if( this.nobility + this.honor + this.bravery > other.nobility + other.honor + other.bravery)
     {
-        System.out.println(this.getName() + "лучший Грифендорец,чем " + other.getName());
+        System.out.println(this.getName() + " - лучший Грифендорец,чем " + other.getName());
     } else {
-        System.out.println(other.getName() + "лучший Гриффендорец, чем " + this.getName());
+        System.out.println(other.getName() + " - лучший Гриффендорец, чем " + this.getName());
         }
            }
 
   @Override
     public String toString(){
-        return
-                ", nobility = " + nobility +
-                "honor = " + honor +
-                ",bravery = " + bravery;
+        return getName()+ "  обладает магической силой = " + magicPower +
+                ", умением летать = " +   transgressionDistance +
+                ", благородством = " + nobility +
+                ", честью = " + honor +
+                ",храбростью = " + bravery;
 
+    } }
 
-    }
-}
 

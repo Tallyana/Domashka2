@@ -29,18 +29,19 @@ public class Huffiepuff extends  Hogwards{
     }
     public void  compare(Huffiepuff other) {
         if (this.diligence + this.loyalty + this.honest  > other.diligence + other.loyalty + other.honest ) {
-            System.out.println(this.getName() + "лучший Пуффендуец,чем " + other.getName());
+            System.out.println(this.getName() + " - лучший Пуффендуец,чем " + other.getName());
         } else {
-            System.out.println(other.getName() + "лучший Пуффендуец, чем " + this.getName());
+            System.out.println(other.getName() + " - лучший Пуффендуец, чем " + this.getName());
         }
     }
 
 
     @Override
     public String toString() {
-        return
+        return getName()+ "  обладает магической силой = " + magicPower +
+                ", умением летать = " +   transgressionDistance +
                 ", diligence = " + diligence +
-                "loyalty = " + loyalty +
+                ", loyalty = " + loyalty +
                 ",honest = " + honest;
 
     }

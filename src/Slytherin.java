@@ -45,20 +45,21 @@ public class Slytherin extends  Hogwards{
     public void  compare(Slytherin other) {
         if (this.cunning + this.determination + this.ambition + this.resourcefullness + this.list
                 > other.cunning + other.determination + other.ambition + other.resourcefullness + other.list)
-        {  System.out.println(this.getName() + "лучший Слизеринец,чем " + other.getName());
+        {  System.out.println(this.getName() + " - лучший Слизеринец,чем " + other.getName());
 
         } else {
-            System.out.println(other.getName() + "лучший Слизеринец, чем " + this.getName());
+            System.out.println(other.getName() + " - лучший Слизеринец, чем " + this.getName());
         }
     }
     @Override
     public String toString() {
-        return
-                "cunning=" + cunning +
-                ", determination=" + determination +
-                ", ambition=" + ambition +
-                ", resourcefullness=" + resourcefullness +
-                ", list=" + list ;
+        return getName()+ "  обладает магической силой = " + magicPower +
+                ", умением летать = " +   transgressionDistance +
+                "cunning= " + cunning +
+                ", determination= " + determination +
+                ", ambition= " + ambition +
+                ", resourcefullness = " + resourcefullness +
+                ", list= " + list ;
     }
 }
 

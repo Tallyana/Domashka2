@@ -38,16 +38,17 @@ public class Ravenclaw extends Hogwards{
 
     public void  compare(Ravenclaw other) {
         if (this.creativity + this.witty + this.wisdom + this.intelligence > other.creativity + other.witty + +other.wisdom + other.intelligence) {
-            System.out.println(this.getName() + "лучший Когтеранец,чем " + other.getName());
+            System.out.println(this.getName() + " - лучший Когтеранец,чем " + other.getName());
         } else {
-            System.out.println(other.getName() + "лучший Когтевранец, чем " + this.getName());
+            System.out.println(other.getName() + " - лучший Когтевранец, чем " + this.getName());
         }
     }
     @Override
     public String toString() {
-        return
+        return getName()+ "  обладает магической силой = " + magicPower +
+                ", умением летать = " +   transgressionDistance +
                 ", creativity = " + creativity +
-                "witty = " + witty +
+                ", witty = " + witty +
                 ",wisdom = " + wisdom +
                         ",intelligence = " + intelligence;
     }
